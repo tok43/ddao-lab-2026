@@ -1,0 +1,86 @@
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t broken-links:nil c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:nil
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:t toc:t todo:t |:t
+#+TITLE: Datacenter Design and Operations 2026 - Lab
+#+AUTHOR: Daniele Santoro
+#+LANGUAGE: en
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.1.1 (Org mode 9.0.5)
+
+The Lab exercises are prepared to run on the Course Lab Environment provided to
+every enrolled student. You could try to run exercises on other systems (eg:
+your laptop) but I cannot guarantee the full compatibility.
+
+As a general rule, if the exercise folder contains only the =README.org=, you
+should just follow those instructions, while if it contains other files, then
+you need to change inside the folder and follow the steps from there as they are
+relative to the specific exercise.
+
+* Lab access and groups
+
+We prepared 30 groups and 30 servers, one dedicated server for each student. Each group is associated with a specific server and a dedicated account. 
+
+Access details are provided in the table below.
+
+The mapping between *Student → Group* will be shared shortly.
+
+|-------+-------+----------+-------------+---------------+------+---------|
+| Group | User  | Password | Server Name |     Server IP | VMID | Notes   |
+|-------+-------+----------+-------------+---------------+------+---------|
+|    01 | grp01 | pwd01    | ddao-lab-01 | 192.168.2.156 |  116 |         |
+|    02 | grp02 | pwd02    | ddao-lab-02 | 192.168.2.151 |  120 |         |
+|    03 | grp03 | pwd03    | ddao-lab-03 | 192.168.2.186 |  119 |         |
+|    04 | grp04 | pwd04    | ddao-lab-04 | 192.168.2.178 |  118 |         |
+|    05 | grp05 | pwd05    | ddao-lab-05 | 192.168.2.187 |  117 |         |
+|    06 | grp06 | pwd06    | ddao-lab-06 | 192.168.2.181 |  114 |         |
+|    07 | grp07 | pwd07    | ddao-lab-07 | 192.168.2.180 |  111 |         |
+|    08 | grp08 | pwd08    | ddao-lab-08 | 192.168.2.182 |  103 |         |
+|    09 | grp09 | pwd09    | ddao-lab-09 | 192.168.2.152 |  109 |         |
+|    10 | grp10 | pwd10    | ddao-lab-10 | 192.168.2.184 |  112 |         |
+|    11 | grp11 | pwd11    | ddao-lab-11 | 192.168.2.174 |  110 |         |
+|    12 | grp12 | pwd12    | ddao-lab-12 | 192.168.2.153 |  115 |         |
+|    13 | grp13 | pwd13    | ddao-lab-13 | 192.168.2.176 |  106 |         |
+|    14 | grp14 | pwd14    | ddao-lab-14 | 192.168.2.183 |  113 |         |
+|    15 | grp15 | pwd15    | ddao-lab-15 | 192.168.2.172 |  105 |         |
+|    16 | grp16 | pwd16    | ddao-lab-16 | 192.168.2.165 |  134 |         |
+|    17 | grp17 | pwd17    | ddao-lab-17 | 192.168.2.162 |  104 |         |
+|    18 | grp18 | pwd18    | ddao-lab-18 | 192.168.2.150 |  130 |         |
+|    19 | grp19 | pwd19    | ddao-lab-19 | 192.168.2.155 |  132 |         |
+|    20 | grp20 | pwd20    | ddao-lab-20 | 192.168.2.189 |  122 |         |
+|    21 | grp21 | pwd21    | ddao-lab-21 | 192.168.2.191 |  108 |         |
+|    22 | grp22 | pwd22    | ddao-lab-22 | 192.168.2.158 |  129 |         |
+|    23 | grp23 | pwd23    | ddao-lab-23 | 192.168.2.173 |  133 |         |
+|    24 | grp24 | pwd24    | ddao-lab-24 | 192.168.2.190 |  135 |         |
+|    25 | grp25 | pwd25    | ddao-lab-25 | 192.168.2.160 |  121 |         |
+|    26 | grp26 | pwd26    | ddao-lab-26 | 192.168.2.161 |  102 |         |
+|    27 | grp27 | pwd27    | ddao-lab-27 | 192.168.2.192 |  123 |         |
+|    28 | grp28 | pwd28    | ddao-lab-28 | 192.168.2.163 |  107 |         |
+|    29 | grp29 | pwd29    | ddao-lab-29 | 192.168.2.159 |  101 |         |
+|    30 | grp30 | pwd30    | ddao-lab-30 | 192.168.2.188 |  124 |         |
+|-------+-------+----------+-------------+---------------+------+---------|
+|    31 | grp31 | pwd31    | ddao-lab-31 | 192.168.2.164 |  125 | Spare   |
+|    32 | grp32 | pwd32    | ddao-lab-32 | 192.168.2.171 |  128 | Spare   |
+|    33 | grp33 | pwd33    | ddao-lab-33 | 192.168.2.194 |  126 | Spare   |
+|    34 | grp34 | pwd34    | ddao-lab-34 | 192.168.2.177 |  131 | Spare   |
+|-------+-------+----------+-------------+---------------+------+---------|
+|    35 | grp35 | pwd35    | ddao-lab-35 | 192.168.2.195 |  127 | Teacher |
+|-------+-------+----------+-------------+---------------+------+---------|
+
+* Lab00 - Intro
+- [[file:e01][Exercise 01 - Install required tools]]
+- [[file:e02][Exercise 02 - Generate and upload your SSH key (optional)]]
+- [[file:e03][Exercise 03 - Setup an SSH tunnel and use it as a socks proxy in a web Browser]]
+* Lab01 - Docker 1
+- [[file:e04][Exercise 04 - Install and Verify Docker (optional)]]
+- [[file:e05][Exercise 05 - Hello World with Docker]]
+- [[file:e06][Exercise 06 - Build a custom Docker image]]
+* Lab02 - Docker 2
+- [[file:e07][Exercise 07 - Build a Docker image using a Dockerfile]]
+- [[file:e08][Exercise 08 - Make two containers talking each others]]
+- [[file:e09][Exercise 09 – Run a Service with Docker]]
+- [[file:e10][Exercise 10 - Run a custom Service with Docker]]
+- [[file:e11][Exercise 11 - Run a custom Docker Service with persistency]]
+- [[file:e12][Exercise 12 - Setup a website based on WordPress on a multi-container architecture]]

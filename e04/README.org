@@ -1,0 +1,38 @@
+* Exercise 04 - Install and Verify Docker (optional)
+  - Description :: Install the Docker engine (if not already installed) and test it is working.
+* Solutions and Instructions
+** Introduction
+From now on we will use the =docker-host= environment prepare in the previous exercise, that one having the referred =Vagrantfile= at the root of the repository for all the exercises related with the second part of the lab involving PaaS, Docker and containers.
+
+Before we need to install Docker on the host.
+
+** Install Docker on your docker-host
+
+   Install Docker
+   #+BEGIN_SRC sh
+   sudo apt-get install docker.io -y
+   #+END_SRC
+
+   Enable ubuntu user to use Docker
+   #+BEGIN_SRC sh
+   sudo usermod -aG docker $USER
+   #+END_SRC
+
+   Logout & Login again
+
+** Test Docker installation
+   View installed Docker version
+   #+BEGIN_SRC sh
+   docker version
+   #+END_SRC
+
+   View available images
+   #+BEGIN_SRC sh
+   docker images
+   #+END_SRC
+
+
+   View running containers
+   #+BEGIN_SRC sh
+   docker ps
+   #+END_SRC
