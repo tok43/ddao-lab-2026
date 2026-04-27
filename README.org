@@ -84,3 +84,8 @@ The mapping between *Student → Group* will be shared shortly.
 - [[file:e10][Exercise 10 - Run a custom Service with Docker]]
 - [[file:e11][Exercise 11 - Run a custom Docker Service with persistency]]
 - [[file:e12][Exercise 12 - Setup a website based on WordPress on a multi-container architecture]]
+* Lab03 - Kubernetes 1
+- [[file:e13][Exercise 13 - Install a single-node Kubernetes cluster]]
+- [[file:e14][Exercise 14 – Play with our fresh new k8s cluster]]
+- [[file:e15][Exercise 15 - Start a single pod using a spec file]]
+- [[file:e16][Exercise 16 – Inspect the ReplicaSet]]
