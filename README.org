@@ -89,3 +89,11 @@ The mapping between *Student → Group* will be shared shortly.
 - [[file:e14][Exercise 14 – Play with our fresh new k8s cluster]]
 - [[file:e15][Exercise 15 - Start a single pod using a spec file]]
 - [[file:e16][Exercise 16 – Inspect the ReplicaSet]]
+* Lab04 - Kubernetes 2
+- [[file:e17][Exercise 17 - Deployment rollout]]
+- [[file:e18][Exercise 18 - Labels and Selectors]]
+- [[file:e19][Exercise 19 - ConfigMaps & Secrets]]
+- [[file:e20][Exercise 20 - Create a multi-node cluster]]
+- [[file:e21][Exercise 21 - Pod-to-Pod Communications]]
+- [[file:e22][Exercise 22 - External World-To-Pod Communication]]
+- [[file:e23][Exercise 23 - Load Balancing]]
