@@ -97,3 +97,9 @@ The mapping between *Student → Group* will be shared shortly.
 - [[file:e21][Exercise 21 - Pod-to-Pod Communications]]
 - [[file:e22][Exercise 22 - External World-To-Pod Communication]]
 - [[file:e23][Exercise 23 - Load Balancing]]
+* Lab05 - Kubernetes 3
+- [[file:e24][Exercise 24 - Volumes]]
+- [[file:e25][Exercise 25 - Namespaces]]
+- [[file:e26][Exercise 26 - Pod placement]]
+- [[file:e27][Exercise 27 - Install k8s Dashboard]]
+
